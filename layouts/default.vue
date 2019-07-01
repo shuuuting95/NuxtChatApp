@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app class="content-area">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -115,3 +115,11 @@ export default {
   }
 }
 </script>
+<style>
+  .content-area{
+    min-height:100vh;
+    margin:0;
+    padding:0;
+  }
+  
+</style>
