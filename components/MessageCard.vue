@@ -9,7 +9,7 @@
             <v-list-tile-avatar color="grey darken-3">
               <v-img
                 class="elevation-6"
-                src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light"
+                :src="this.icon"
               ></v-img>
             </v-list-tile-avatar>
             <v-list-tile-content>
@@ -23,7 +23,8 @@
     export default{
        props:{
            name:String,
-           message:String
+           message:String,
+           icon:String
        }
     }
 </script>
@@ -31,5 +32,6 @@
     .message-card{
         margin-top:15px;
         margin:0 0 auto 0;
+        border-radius:40px;
     }    
 </style>
